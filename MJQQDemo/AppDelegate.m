@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "MJTabBarViewController.h"
+#import "MenuViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +18,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     // Override point for customization after application launch.
+    self.window.rootViewController = self.slideVC;
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
@@ -45,6 +53,16 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+#pragma mark - getters
+- (MJLeftSlideMenuController *)slideVC {
+    if (!_slideVC) {
+        
+        MJTabBarViewController *tab = [[MJTabBarViewController alloc]init];
+        
+        _slideVC = [[MJLeftSlideMenuController alloc] initWithMainVC:tab leftMenuVC:[MenuViewController new]];
+    }
+    return _slideVC;
 }
 
 

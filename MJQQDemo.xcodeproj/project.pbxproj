@@ -15,6 +15,11 @@
 		FA4566F21E7A3F2F0043F021 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA4566F01E7A3F2F0043F021 /* LaunchScreen.storyboard */; };
 		FA4566FD1E7A3F2F0043F021 /* MJQQDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4566FC1E7A3F2F0043F021 /* MJQQDemoTests.m */; };
 		FA4567081E7A3F2F0043F021 /* MJQQDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4567071E7A3F2F0043F021 /* MJQQDemoUITests.m */; };
+		FA4567201E7A3F550043F021 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4567161E7A3F550043F021 /* MenuViewController.m */; };
+		FA4567211E7A3F550043F021 /* MJTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4567191E7A3F550043F021 /* MJTabBarViewController.m */; };
+		FA4567221E7A3F550043F021 /* MJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA45671B1E7A3F550043F021 /* MJViewController.m */; };
+		FA4567231E7A3F550043F021 /* MJLeftSlideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA45671D1E7A3F550043F021 /* MJLeftSlideMenuController.m */; };
+		FA4567241E7A3F550043F021 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FA45671F1E7A3F550043F021 /* UIView+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,16 @@
 		FA4567031E7A3F2F0043F021 /* MJQQDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MJQQDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA4567071E7A3F2F0043F021 /* MJQQDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJQQDemoUITests.m; sourceTree = "<group>"; };
 		FA4567091E7A3F2F0043F021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA4567161E7A3F550043F021 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		FA4567171E7A3F550043F021 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		FA4567181E7A3F550043F021 /* MJTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJTabBarViewController.h; sourceTree = "<group>"; };
+		FA4567191E7A3F550043F021 /* MJTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJTabBarViewController.m; sourceTree = "<group>"; };
+		FA45671A1E7A3F550043F021 /* MJViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJViewController.h; sourceTree = "<group>"; };
+		FA45671B1E7A3F550043F021 /* MJViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJViewController.m; sourceTree = "<group>"; };
+		FA45671C1E7A3F550043F021 /* MJLeftSlideMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJLeftSlideMenuController.h; sourceTree = "<group>"; };
+		FA45671D1E7A3F550043F021 /* MJLeftSlideMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJLeftSlideMenuController.m; sourceTree = "<group>"; };
+		FA45671E1E7A3F550043F021 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		FA45671F1E7A3F550043F021 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +116,7 @@
 		FA4566E11E7A3F2F0043F021 /* MJQQDemo */ = {
 			isa = PBXGroup;
 			children = (
+				FA4567151E7A3F370043F021 /* MJLeftMenu */,
 				FA4566E51E7A3F2F0043F021 /* AppDelegate.h */,
 				FA4566E61E7A3F2F0043F021 /* AppDelegate.m */,
 				FA4566E81E7A3F2F0043F021 /* ViewController.h */,
@@ -138,6 +154,23 @@
 				FA4567091E7A3F2F0043F021 /* Info.plist */,
 			);
 			path = MJQQDemoUITests;
+			sourceTree = "<group>";
+		};
+		FA4567151E7A3F370043F021 /* MJLeftMenu */ = {
+			isa = PBXGroup;
+			children = (
+				FA4567161E7A3F550043F021 /* MenuViewController.m */,
+				FA4567171E7A3F550043F021 /* MenuViewController.h */,
+				FA4567181E7A3F550043F021 /* MJTabBarViewController.h */,
+				FA4567191E7A3F550043F021 /* MJTabBarViewController.m */,
+				FA45671A1E7A3F550043F021 /* MJViewController.h */,
+				FA45671B1E7A3F550043F021 /* MJViewController.m */,
+				FA45671C1E7A3F550043F021 /* MJLeftSlideMenuController.h */,
+				FA45671D1E7A3F550043F021 /* MJLeftSlideMenuController.m */,
+				FA45671E1E7A3F550043F021 /* UIView+Extension.h */,
+				FA45671F1E7A3F550043F021 /* UIView+Extension.m */,
+			);
+			name = MJLeftMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,8 +310,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA4566EA1E7A3F2F0043F021 /* ViewController.m in Sources */,
+				FA4567221E7A3F550043F021 /* MJViewController.m in Sources */,
 				FA4566E71E7A3F2F0043F021 /* AppDelegate.m in Sources */,
+				FA4567231E7A3F550043F021 /* MJLeftSlideMenuController.m in Sources */,
 				FA4566E41E7A3F2F0043F021 /* main.m in Sources */,
+				FA4567201E7A3F550043F021 /* MenuViewController.m in Sources */,
+				FA4567241E7A3F550043F021 /* UIView+Extension.m in Sources */,
+				FA4567211E7A3F550043F021 /* MJTabBarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
